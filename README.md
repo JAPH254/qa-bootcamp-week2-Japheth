@@ -64,7 +64,6 @@ Run these steps in order from a terminal.
 |------------|----------------|
 | `src/`     | TypeScript code you will test. It starts with `classifyStatus.ts`, which is not implemented yet. |
 | `tests/`   | Your Playwright tests. It is empty for now; you will add tests during the week. |
-| `postman/` | A Postman environment template for Toolshop. Import it into Postman. `toolshop_url` and `toolshop_api_url` are filled in. Fill in `toolshop_email` and `toolshop_password` in Postman only; `toolshop_token` is set by the login request. |
 | `scripts/` | Helper scripts. `check.ts` checks your setup and is run by `npm run check`. |
 
 ## Scripts

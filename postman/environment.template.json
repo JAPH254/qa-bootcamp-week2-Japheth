@@ -2,26 +2,14 @@
   "name": "QA Bootcamp Week 2",
   "values": [
     {
-      "key": "trello_key",
-      "value": "",
-      "type": "secret",
-      "enabled": true
-    },
-    {
-      "key": "trello_token",
-      "value": "",
-      "type": "secret",
-      "enabled": true
-    },
-    {
-      "key": "trello_board_id",
-      "value": "",
+      "key": "toolshop_url",
+      "value": "https://practicesoftwaretesting.com",
       "type": "default",
       "enabled": true
     },
     {
-      "key": "toolshop_url",
-      "value": "",
+      "key": "toolshop_api_url",
+      "value": "https://api.practicesoftwaretesting.com",
       "type": "default",
       "enabled": true
     }

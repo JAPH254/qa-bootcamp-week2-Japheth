@@ -5,7 +5,7 @@ This is the starting point for Week 2 of the QA bootcamp. During the week you wi
 - TypeScript
 - Playwright (UI testing)
 - Postman (API testing)
-- The Trello REST API
+- The Toolshop REST API
 
 There are no tests in this repo. You will write them during the week.
 
@@ -46,7 +46,7 @@ Run these steps in order from a terminal.
    cp .env.example .env
    ```
 
-   Then open `.env` and fill in your values: your Trello API key and token, the ID of your Trello board, and the Toolshop URL.
+   `.env` already contains the Toolshop website URL (`TOOLSHOP_URL`) and the Toolshop API URL (`TOOLSHOP_API_URL`). Only change them if your trainer gives you different URLs.
 
 5. Check that your setup works:
 
@@ -54,9 +54,9 @@ Run these steps in order from a terminal.
    npm run check
    ```
 
-   If everything is set up correctly, the last line says `PASS`.
+   This sends a GET request to the Toolshop API's `/products` endpoint (no login needed). If everything is set up correctly, it prints your Node version, the HTTP status (200), the number of products, and a last line that says `PASS`.
 
-> **Warning:** never commit `.env`. It holds your Trello key and token. It is listed in `.gitignore` so Git ignores it. Do not remove it from there, and never paste your key or token into code, screenshots or chat.
+> **Warning:** never commit `.env`. It is where your own settings and, later in the course, your secrets (keys, tokens, passwords) live. It is listed in `.gitignore` so Git ignores it. Do not remove it from there.
 
 ## Folders
 
@@ -64,10 +64,10 @@ Run these steps in order from a terminal.
 |------------|----------------|
 | `src/`     | TypeScript code you will test. It starts with `classifyStatus.ts`, which is not implemented yet. |
 | `tests/`   | Your Playwright tests. It is empty for now; you will add tests during the week. |
-| `postman/` | A Postman environment template. Import it into Postman and fill in your own values there. |
+| `postman/` | A Postman environment template for Toolshop, with `toolshop_url` and `toolshop_api_url`. Import it into Postman. |
 | `scripts/` | Helper scripts. `check.ts` checks your setup and is run by `npm run check`. |
 
 ## Scripts
 
-- `npm run check`: checks your `.env` and your Trello credentials.
+- `npm run check`: checks your `.env` and that you can reach the Toolshop API.
 - `npm test`: runs the Playwright tests in `tests/`.

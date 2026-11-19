@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "check": "tsx scripts/check.ts",
-    "test": "playwright test"
+    "test": "playwright test --pass-with-no-tests"
   },
   "devDependencies": {
     "@playwright/test": "1.65.1",

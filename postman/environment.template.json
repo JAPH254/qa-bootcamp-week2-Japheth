@@ -12,6 +12,24 @@
       "value": "https://api.practicesoftwaretesting.com",
       "type": "default",
       "enabled": true
+    },
+    {
+      "key": "toolshop_email",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "toolshop_password",
+      "value": "",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "toolshop_token",
+      "value": "",
+      "type": "secret",
+      "enabled": true
     }
   ],
   "_postman_variable_scope": "environment"

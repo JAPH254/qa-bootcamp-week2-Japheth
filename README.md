@@ -62,7 +62,6 @@ Run these steps in order from a terminal.
 
 | Folder     | What it is for |
 |------------|----------------|
-| `src/`     | TypeScript code you will test. It starts with `classifyStatus.ts`, which is not implemented yet. |
 | `tests/`   | Your Playwright tests. It is empty for now; you will add tests during the week. |
 | `scripts/` | Helper scripts. `check.ts` checks your setup and is run by `npm run check`. |
 

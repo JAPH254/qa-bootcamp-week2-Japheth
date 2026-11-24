@@ -69,3 +69,7 @@ Run these steps in order from a terminal.
 
 - `npm run check`: checks your `.env` and that you can reach the Toolshop API.
 - `npm test`: runs the Playwright tests in `tests/`.
+
+- Added TypeScript practice files under `src/ts-basics/`, covering basic types, tuples, functions, objects, type aliases, union types, and optional chaining.
+- Added `src/profile-validator.ts` to demonstrate type-safe user profiles and safe handling of optional properties.
+- Updated the README with relevant information about the work completed.
